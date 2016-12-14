@@ -340,7 +340,7 @@ var PhotoSwipeUI_Default =
 		_applyNavBarGaps = function(item) {
 			var gap = item.vGap;
 
-			if( _fitControlsInViewport() ) {
+			/*if( _fitControlsInViewport() ) {
 				
 				var bars = _options.barsSize; 
 				if(_options.captionEl && bars.bottom === 'auto') {
@@ -353,7 +353,7 @@ var PhotoSwipeUI_Default =
 					if( _options.addCaptionHTMLFn(item, _fakeCaptionContainer, true) ) {
 
 						var captionSize = _fakeCaptionContainer.clientHeight;
-						gap.bottom = 0; //parseInt(captionSize,10) || 44;
+						gap.bottom = parseInt(captionSize,10) || 44;
 					} else {
 						gap.bottom = bars.top; // if no caption, set size of bottom gap to size of top
 					}
@@ -365,7 +365,10 @@ var PhotoSwipeUI_Default =
 				gap.top = bars.top;
 			} else {
 				gap.top = gap.bottom = 0;
-			}
+			}*/
+
+			gap.top = 0;
+			gap.bottom = 0;
 		},
 		_setupIdle = function() {
 			// Hide controls when mouse is used
