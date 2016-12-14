@@ -79,9 +79,9 @@ var PhotoSwipeUI_Default =
 			shareButtons: [
 				{id:'facebook', label:'Share on Facebook', url:'https://www.facebook.com/sharer/sharer.php?u={{url}}'},
 				{id:'twitter', label:'Tweet', url:'https://twitter.com/intent/tweet?text={{text}}&url={{url}}'},
-				{id:'pinterest', label:'Pin it', url:'http://www.pinterest.com/pin/create/button/'+
-													'?url={{url}}&media={{image_url}}&description={{text}}'},
-				{id:'download', label:'Download image', url:'{{raw_image_url}}', download:true}
+				//{id:'pinterest', label:'Pin it', url:'http://www.pinterest.com/pin/create/button/'+
+				//									'?url={{url}}&media={{image_url}}&description={{text}}'},
+				//{id:'download', label:'Download image', url:'{{raw_image_url}}', download:true}
 			],
 			getImageURLForShare: function( /* shareButtonData */ ) {
 				return pswp.currItem.src || '';
@@ -353,7 +353,7 @@ var PhotoSwipeUI_Default =
 					if( _options.addCaptionHTMLFn(item, _fakeCaptionContainer, true) ) {
 
 						var captionSize = _fakeCaptionContainer.clientHeight;
-						gap.bottom = parseInt(captionSize,10) || 44;
+						gap.bottom = 0; //parseInt(captionSize,10) || 44;
 					} else {
 						gap.bottom = bars.top; // if no caption, set size of bottom gap to size of top
 					}

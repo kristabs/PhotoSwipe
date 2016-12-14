@@ -272,13 +272,13 @@ a.pswp__share--download:hover {
     color: #BBB; }
 
 .pswp__caption__center {
-  text-align: left;
-  max-width: 420px;
+  text-align: cemter;
+  max-width: 1200px;
   margin: 0 auto;
-  font-size: 13px;
+  font-size: 14px;
   padding: 10px;
   line-height: 20px;
-  color: #CCC; }
+  color: #fff; }
 
 .pswp__caption--empty {
   display: none; }
