@@ -741,6 +741,9 @@ var PhotoSwipeUI_Default =
 					if(_options.clickToCloseNonZoomable) {
 						pswp.close();
 					}
+                    else{
+                        pswp.next();
+                    }
 				} else {
 					pswp.toggleDesktopZoom(e.detail.releasePoint);
 				}
