@@ -108,7 +108,9 @@
   margin-top: -50px;
   width: 70px;
   height: 100px;
-  position: absolute; }
+  position: absolute;
+  z-index: 1;
+}
 
 .pswp__button--arrow--left {
   left: 0; }
