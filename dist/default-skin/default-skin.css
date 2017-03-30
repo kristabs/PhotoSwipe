@@ -233,6 +233,10 @@ a.pswp__share--twitter:hover {
   background: #55ACEE;
   color: #FFF; }
 
+a.pswp__share--draugiem:hover {
+  background: #FF6600;
+  color: #FFF; }
+
 a.pswp__share--pinterest:hover {
   background: #CCC;
   color: #CE272D; }
